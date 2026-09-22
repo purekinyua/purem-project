@@ -10,6 +10,7 @@ document.querySelectorAll('.nav .links a, .nav .cta').forEach(a => {
     }
   });
 });
+
 const phrases = [
   "business works.",
   "shop runs.",
@@ -48,18 +49,7 @@ if (cycleEl) {
   cycleEl.textContent = phrases[0];
   setTimeout(tick, 1800);
 }
-const revealEls = document.querySelectorAll('.reveal');
-if (revealEls.length) {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.2 });
-  revealEls.forEach(el => observer.observe(el));
-}
+
 // Automatically animate key elements as they scroll into view
 const autoRevealSelectors = 'h2.headline, .product-card, .why-row, .project-row, .teaser-card, .step, .mini-feature, .svc-row, .screenframe, .before-after-card, .cs-graphic';
 const autoRevealEls = document.querySelectorAll(autoRevealSelectors);
