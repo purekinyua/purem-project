@@ -3,73 +3,433 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contact — PureM Designs</title>
+<title>Let's Talk — PureM Designs</title>
 <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+
+<body class="contact-page">
 
 <nav class="nav">
   <div class="wrap">
-    <a href="index.html" class="brand"><img src="assets/images/logo-icon.png" alt="PureM Designs" class="brand-mark-img">PureM Designs</a>
-    <div class="links">
+
+    <a href="index.html" class="brand">
+      <img
+        src="assets/images/logo-icon.png"
+        alt="PureM Designs"
+        class="brand-mark-img"
+      >
+      PureM Designs
+    </a>
+
+    <div class="links" id="mobileMenu">
       <a href="who.html">Who We Are</a>
       <a href="systems.html">Our Systems</a>
       <a href="work.html">How We Work</a>
     </div>
+
     <a href="contact.html" class="cta">Let's talk</a>
+
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      type="button"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
   </div>
 </nav>
 
-<section class="dark cta-section" style="padding-top:130px;">
-  <div class="wrap cta-inner">
-    <div class="cta-statement">Your business has its own way of working.<br>Your software should reflect that.</div>
-    <div class="cta-sub">Let's build your system.</div>
 
-    <a href="https://wa.me/254797231730" target="_blank" rel="noopener" class="whatsapp-btn">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.3A8.9 8.9 0 0012 4a8.8 8.8 0 00-7.6 13.3L3 21l3.8-1.3A8.8 8.8 0 0012 21a8.9 8.9 0 006.3-15.7zM12 19.3a7.3 7.3 0 01-3.8-1l-.3-.2-2.6.9.9-2.5-.2-.3A7.4 7.4 0 1119.4 12 7.4 7.4 0 0112 19.3zm4-5.5c-.2-.1-1.3-.6-1.5-.7s-.4-.1-.5.1-.6.7-.7.9-.3.2-.5.1a6 6 0 01-1.8-1.1 6.8 6.8 0 01-1.2-1.6c-.1-.2 0-.4.1-.5l.4-.4a1.7 1.7 0 00.2-.4.4.4 0 000-.4c-.1-.1-.5-1.2-.7-1.7s-.4-.4-.5-.4h-.5a.9.9 0 00-.6.3 2.8 2.8 0 00-.9 2.1 4.9 4.9 0 001 2.5 11.2 11.2 0 004.5 4c.6.3 1.1.4 1.5.6a3.6 3.6 0 001.6.1 2.7 2.7 0 001.8-1.2 2.2 2.2 0 00.1-1.2c-.1-.1-.2-.2-.4-.3z"/></svg>
-      Chat with us on WhatsApp
-    </a>
+<!-- CONTACT HERO -->
+<section class="contact-hero">
 
-    <div class="contact-grid">
-      <div class="contact-list">
-        <div class="row">
-          <div class="row-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .3 2 .6 2.9a2 2 0 01-.5 2.1L8 9.9a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.9.3 1.9.5 2.9.6a2 2 0 011.8 2.1z"/></svg></div>
-          <div><span class="k">Phone / WhatsApp</span><span>0797 231 730</span></div>
-        </div>
-        <div class="row">
-          <div class="row-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg></div>
-          <div><span class="k">Email</span><span>puremproperty@gmail.com</span></div>
-        </div>
-        <div class="row">
-          <div class="row-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 4 5.7 4 9s-1.5 6.4-4 9c-2.5-2.6-4-5.7-4-9s1.5-6.4 4-9z"/></svg></div>
-          <div><span class="k">Social Media</span><span>[INSERT SOCIAL HANDLES]</span></div>
-        </div>
-      </div>
+  <div class="wrap contact-hero-inner">
+
+    <div class="eyebrow">
+      Let's talk
     </div>
+
+    <h1>
+      Have a business problem
+      worth solving?
+    </h1>
+
+    <p class="contact-hero-copy">
+      Tell us what you're trying to improve, automate or build.
+      You don't need to know exactly what the solution is yet —
+      that's something we can figure out together.
+    </p>
+
   </div>
+
 </section>
 
-<footer class="site-footer">
-  <div class="wrap footer-grid no-contact-col">
-    <div class="footer-brand">
-      <div class="footer-logo"><img src="assets/images/logo-icon.png" alt="PureM Designs" class="brand-mark-img">PureM Designs</div>
-      <p class="footer-tagline">We build technology around the way your business works.</p>
+
+<!-- CONTACT OPTIONS -->
+<section class="contact-main">
+
+  <div class="wrap contact-main-grid">
+
+    <div class="contact-message">
+
+      <div class="eyebrow">
+        Start with a conversation
+      </div>
+
+      <h2 class="headline">
+        Tell us what's not
+        working.
+      </h2>
+
+      <p class="lede">
+        Maybe you're tired of managing everything on paper.
+        Maybe your business has outgrown the tools you're using.
+        Or maybe you have an idea and need someone to help bring it
+        to life.
+      </p>
+
+      <p class="contact-soft-note">
+        Whatever it is, start there.
+      </p>
+
     </div>
+
+
+    <div class="contact-options">
+
+      <!-- WHATSAPP -->
+      <a
+        href="https://wa.me/254797231730"
+        target="_blank"
+        rel="noopener"
+        class="contact-option contact-option-primary"
+      >
+
+        <div class="contact-option-icon whatsapp-icon">
+
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path d="M17.6 6.3A8.9 8.9 0 0012 4a8.8 8.8 0 00-7.6 13.3L3 21l3.8-1.3A8.8 8.8 0 0012 21a8.9 8.9 0 006.3-15.7zM12 19.3a7.3 7.3 0 01-3.8-1l-.3-.2-2.6.9.9-2.5-.2-.3A7.4 7.4 0 1119.4 12 7.4 7.4 0 0112 19.3zm4-5.5c-.2-.1-1.3-.6-1.5-.7s-.4-.1-.5.1-.6.7-.7.9-.3.2-.5.1a6 6 0 01-1.8-1.1 6.8 6.8 0 01-1.2-1.6c-.1-.2 0-.4.1-.5l.4-.4a1.7 1.7 0 00.2-.4.4.4 0 000-.4c-.1-.1-.5-1.2-.7-1.7s-.4-.4-.5-.4h-.5a.9.9 0 00-.6.3 2.8 2.8 0 00-.9 2.1 4.9 4.9 0 001 2.5 11.2 11.2 0 004.5 4c.6.3 1.1.4 1.5.6a3.6 3.6 0 001.6.1 2.7 2.7 0 001.8-1.2 2.2 2.2 0 00.1-1.2c-.1-.1-.2-.2-.4-.3z"/>
+          </svg>
+
+        </div>
+
+        <div class="contact-option-copy">
+
+          <span class="contact-option-label">
+            Fastest way to reach us
+          </span>
+
+          <h3>
+            Chat with us on WhatsApp
+          </h3>
+
+          <p>
+            Tell us what you need and let's start there.
+          </p>
+
+        </div>
+
+        <span class="contact-option-arrow">
+          →
+        </span>
+
+      </a>
+
+
+      <!-- EMAIL -->
+      <a
+        href="mailto:puremproperty@gmail.com"
+        class="contact-option"
+      >
+
+        <div class="contact-option-icon">
+
+          <svg
+            width="21"
+            height="21"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M4 4h16v16H4z"/>
+            <path d="M22 6l-10 7L2 6"/>
+          </svg>
+
+        </div>
+
+        <div class="contact-option-copy">
+
+          <span class="contact-option-label">
+            Email
+          </span>
+
+          <h3>
+            puremproperty@gmail.com
+          </h3>
+
+          <p>
+            Send us a detailed project or business enquiry.
+          </p>
+
+        </div>
+
+        <span class="contact-option-arrow">
+          →
+        </span>
+
+      </a>
+
+
+      <!-- PHONE -->
+      <a
+        href="tel:0797231730"
+        class="contact-option"
+      >
+
+        <div class="contact-option-icon">
+
+          <svg
+            width="21"
+            height="21"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .3 2 .6 2.9a2 2 0 01-.5 2.1L8 9.9a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.9.3 1.9.5 2.9.6a2 2 0 011.8 2.1z"/>
+          </svg>
+
+        </div>
+
+        <div class="contact-option-copy">
+
+          <span class="contact-option-label">
+            Phone
+          </span>
+
+          <h3>
+            0797 231 730
+          </h3>
+
+          <p>
+            Prefer to talk? Give us a call.
+          </p>
+
+        </div>
+
+        <span class="contact-option-arrow">
+          →
+        </span>
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- WHAT TO SEND -->
+<section class="contact-guidance">
+
+  <div class="wrap">
+
+    <div class="eyebrow">
+      Not sure what to say?
+    </div>
+
+    <h2 class="headline">
+      You can simply tell us:
+    </h2>
+
+    <div class="contact-prompt-grid">
+
+      <div class="contact-prompt">
+        <span>01</span>
+
+        <h3>
+          What your business does
+        </h3>
+
+        <p>
+          A quick description of what you do is enough.
+        </p>
+      </div>
+
+
+      <div class="contact-prompt">
+        <span>02</span>
+
+        <h3>
+          What's difficult right now
+        </h3>
+
+        <p>
+          Tell us what takes too much time or feels unnecessarily manual.
+        </p>
+      </div>
+
+
+      <div class="contact-prompt">
+        <span>03</span>
+
+        <h3>
+          What you'd like to improve
+        </h3>
+
+        <p>
+          Even a simple idea is enough to start the conversation.
+        </p>
+      </div>
+
+    </div>
+
+
+    <div class="contact-guidance-note">
+      You don't need a perfect brief.
+      <strong>Just start the conversation.</strong>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FINAL CTA -->
+<section class="dark contact-final">
+
+  <div class="wrap contact-final-inner">
+
+    <div class="eyebrow">
+      PureM Designs
+    </div>
+
+    <h2>
+      Let's make your business
+      easier to run.
+    </h2>
+
+    <p>
+      One conversation could be the start of a much simpler way
+      of doing things.
+    </p>
+
+    <a
+      href="https://wa.me/254797231730"
+      target="_blank"
+      rel="noopener"
+      class="hero-cta"
+    >
+      Start on WhatsApp
+      <span>→</span>
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer class="site-footer">
+
+  <div class="wrap footer-grid">
+
+    <div class="footer-brand">
+
+      <div class="footer-logo">
+        <img
+          src="assets/images/logo-icon.png"
+          alt="PureM Designs"
+          class="brand-mark-img"
+        >
+        PureM Designs
+      </div>
+
+      <p class="footer-tagline">
+        We build technology around the way your business works.
+      </p>
+
+    </div>
+
+
     <div class="footer-col">
-      <div class="footer-heading">Explore</div>
+
+      <div class="footer-heading">
+        Explore
+      </div>
+
       <div class="footer-link-grid">
         <a href="who.html">Who We Are</a>
         <a href="systems.html">Our Systems</a>
         <a href="work.html">How We Work</a>
         <a href="contact.html">Contact</a>
       </div>
+
     </div>
+
+
+    <div class="footer-col">
+
+      <div class="footer-heading">
+        Get In Touch
+      </div>
+
+      <a href="tel:0797231730">
+        0797 231 730
+      </a>
+
+      <a href="mailto:puremproperty@gmail.com">
+        puremproperty@gmail.com
+      </a>
+
+      <a
+        href="https://wa.me/254797231730"
+        target="_blank"
+        rel="noopener"
+      >
+        WhatsApp
+      </a>
+
+    </div>
+
   </div>
+
+
   <div class="wrap footer-bottom">
-    <div>© 2026 PureM Designs. All rights reserved.</div>
-    <div class="footer-bottom-tag">Simplify <span>/</span> Automate <span>/</span> Grow</div>
+
+    <div>
+      © 2026 PureM Designs. All rights reserved.
+    </div>
+
+    <div class="footer-bottom-tag">
+      Simplify <span>/</span> Automate <span>/</span> Grow
+    </div>
+
   </div>
+
 </footer>
+
+
 <script src="js/script.js"></script>
+
 </body>
 </html>

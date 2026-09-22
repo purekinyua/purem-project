@@ -11,12 +11,81 @@ document.querySelectorAll('.nav .links a, .nav .cta').forEach(a => {
   });
 });
 
+/* ---------- Mobile navigation ---------- */
+
+const menuToggle = document.getElementById('menuToggle');
+const mobileMenu = document.getElementById('mobileMenu');
+
+if (menuToggle && mobileMenu) {
+
+  menuToggle.addEventListener('click', () => {
+
+    const isOpen = mobileMenu.classList.toggle('open');
+
+    menuToggle.classList.toggle('is-open', isOpen);
+
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+
+    menuToggle.setAttribute(
+      'aria-label',
+      isOpen ? 'Close navigation menu' : 'Open navigation menu'
+    );
+
+  });
+
+
+  /* Close menu after selecting a page */
+
+  mobileMenu.querySelectorAll('a').forEach(link => {
+
+    link.addEventListener('click', () => {
+
+      mobileMenu.classList.remove('open');
+      menuToggle.classList.remove('is-open');
+
+      menuToggle.setAttribute('aria-expanded', 'false');
+
+      menuToggle.setAttribute(
+        'aria-label',
+        'Open navigation menu'
+      );
+
+    });
+
+  });
+
+
+  /* Close menu when clicking outside */
+
+  document.addEventListener('click', (event) => {
+
+    if (
+      !mobileMenu.contains(event.target) &&
+      !menuToggle.contains(event.target)
+    ) {
+
+      mobileMenu.classList.remove('open');
+      menuToggle.classList.remove('is-open');
+
+      menuToggle.setAttribute('aria-expanded', 'false');
+
+      menuToggle.setAttribute(
+        'aria-label',
+        'Open navigation menu'
+      );
+
+    }
+
+  });
+
+}
+
 const phrases = [
-  "business works.",
-  "shop runs.",
-  "school operates.",
-  "team gets things done.",
-  "properties are managed."
+  "business works",
+  "shop runs",
+  "school operates",
+  "team gets things done",
+  "properties are managed"
 ];
 const cycleEl = document.getElementById('cycleText');
 
@@ -51,8 +120,12 @@ if (cycleEl) {
 }
 
 // Automatically animate key elements as they scroll into view
-const autoRevealSelectors = 'h2.headline, .product-card, .why-row, .project-row, .teaser-card, .step, .mini-feature, .svc-row, .screenframe, .before-after-card, .cs-graphic';
-const autoRevealEls = document.querySelectorAll(autoRevealSelectors);
+const autoRevealSelectors =
+  'h2.headline, .product-card, .why-row, .project-row, .teaser-card, ' +
+  '.step, .mini-feature, .svc-row, .screenframe, .before-after-card, ' +
+  '.cs-graphic, .problem-card, .home-solution-card, .belief-card, ' +
+  '.showcase-card, .detail-card, .process-card, .experience-point, ' +
+  '.why-work-card, .contact-option, .contact-prompt';
 
 autoRevealEls.forEach((el, i) => {
   el.classList.add('auto-reveal');

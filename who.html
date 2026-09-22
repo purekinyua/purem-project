@@ -6,135 +6,569 @@
 <title>Who We Are — PureM Designs</title>
 <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
 <nav class="nav">
   <div class="wrap">
-    <a href="index.html" class="brand"><img src="assets/images/logo-icon.png" alt="PureM Designs" class="brand-mark-img">PureM Designs</a>
-    <div class="links">
-      <a href="who.html" class="active">Who We Are</a>
-      <a href="systems.html">Our Systems</a>
-      <a href="work.html">How We Work</a>
-    </div>
-    <a href="contact.html" class="cta">Let's talk</a>
+
+    <a href="index.html" class="brand">
+      <img
+        src="assets/images/logo-icon.png"
+        alt="PureM Designs"
+        class="brand-mark-img"
+      >
+      PureM Designs
+    </a>
+
+    <div class="links" id="mobileMenu">
+  <a href="who.html">Who We Are</a>
+  <a href="systems.html">Our Systems</a>
+  <a href="work.html">How We Work</a>
+</div>
+
+<a href="contact.html" class="cta">Let's talk</a>
+
+<button
+  class="menu-toggle"
+  id="menuToggle"
+  aria-label="Open navigation menu"
+  aria-expanded="false"
+  type="button"
+>
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
   </div>
 </nav>
 
-<section style="padding-top:70px;">
-  <div class="wrap who-grid">
+
+<!-- ABOUT INTRO -->
+<section class="about-hero">
+
+  <div class="wrap about-hero-grid">
+
     <div>
-      <div class="eyebrow"><span class="section-number">02</span>Who we are</div>
-      <h2 class="headline">We build systems around your business — not the other way around.</h2>
-      <div class="hairline" style="margin:32px 0;max-width:80px;"></div>
-      <p>PureM Designs helps businesses simplify how they operate through technology.
-      We design business systems and digital solutions that fit the way a business
-      already works, instead of forcing a business to change to fit software.</p>
-      <p>We don't believe in one-size-fits-all tools. We believe in solutions built
-      around real operations — because every business runs differently.</p>
 
-      <div class="mini-feature-row">
-        <div class="mini-feature">
-          <div class="icon-badge">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-          </div>
-          <div class="mini-feature-label">Practical Solutions</div>
-        </div>
-        <div class="mini-feature">
-          <div class="icon-badge">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 01-5.4 5.4L4 17v3h3l5.3-5.3a4 4 0 015.4-5.4l-3 3-2-2 3-3z"/></svg>
-          </div>
-          <div class="mini-feature-label">Custom Built</div>
-        </div>
-        <div class="mini-feature">
-          <div class="icon-badge">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.6-9.5-9A5.5 5.5 0 0112 6a5.5 5.5 0 019.5 6c-2.5 4.4-9.5 9-9.5 9z"/></svg>
-          </div>
-          <div class="mini-feature-label">Your Business, Our Priority</div>
-        </div>
+      <div class="eyebrow">
+        Who We Are
       </div>
+
+      <h1>
+        We build technology
+        around the way your
+        business works.
+      </h1>
+
     </div>
 
-    <div class="before-after-card">
-      <div class="ba-col ba-before">
-        <div class="ba-label">Without PureM</div>
-        <div class="ba-chip">Spreadsheets</div>
-        <div class="ba-chip">Paper records</div>
-        <div class="ba-chip">Disconnected tools</div>
-        <div class="ba-chip">Manual tracking</div>
-      </div>
-      <div class="ba-arrow">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </div>
-      <div class="ba-col ba-after">
-        <div class="ba-label">With PureM</div>
-        <div class="ba-unified">
-          <div class="ba-unified-icon">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-          </div>
-          <div class="ba-unified-text">One system.<br>Everything in it.</div>
-        </div>
-      </div>
+    <div class="about-hero-copy">
+
+      <p>
+        PureM Designs helps businesses simplify the way they work through
+        practical technology, thoughtful systems and digital solutions.
+      </p>
+
+      <p>
+        We believe software should adapt to the business using it —
+        not the other way around.
+      </p>
+
+      <a href="contact.html" class="text-cta">
+        Tell us what you're working on
+        <span>→</span>
+      </a>
+
     </div>
+
   </div>
+
 </section>
 
-<section style="background:var(--paper-2);">
+
+<!-- STORY -->
+<section class="about-story">
+
+  <div class="wrap about-story-grid">
+
+    <div class="about-story-intro">
+
+      <div class="eyebrow">
+        Our approach
+      </div>
+
+      <h2 class="headline">
+        Technology should make
+        business feel lighter.
+      </h2>
+
+    </div>
+
+
+    <div class="about-story-copy">
+
+      <p>
+        Every business has its own rhythm. The way orders come in,
+        customers are served, payments are collected, stock is tracked
+        and information moves from one person to another.
+      </p>
+
+      <p>
+        That's why we don't start with software. We start with
+        understanding how the business works.
+      </p>
+
+      <p>
+        From there, we design and build solutions that bring important
+        processes together, reduce unnecessary manual work and make
+        everyday operations easier to manage.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- WHAT WE BELIEVE -->
+<section class="belief-section">
+
   <div class="wrap">
-    <div class="eyebrow"><span class="section-number">03</span>What we build</div>
-    <h2 class="headline">Two ways we help businesses run better.</h2>
-    <div class="build-grid">
-      <div>
-        <div class="build-col-title">Business Systems</div>
-        <div class="hairline" style="margin-top:16px;"></div>
-        <div class="svc-row"><div class="icon-badge-sm"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V9l8-5 8 5v12"/><path d="M9 21v-7h6v7"/><path d="M9 12h.01"/></svg></div><span>Rental Management Systems</span></div>
-        <div class="svc-row"><div class="icon-badge-sm"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="1"/><path d="M3 10h18"/><path d="M7 14h4"/></svg></div><span>POS Systems</span></div>
-        <div class="svc-row"><div class="icon-badge-sm"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 7v10l9 4 9-4V7"/><path d="M12 11v10"/></svg></div><span>Inventory &amp; Stock Management</span></div>
-        <div class="svc-row"><div class="icon-badge-sm"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div><span>Invoicing &amp; Payment Systems</span></div>
-        <div class="svc-row"><div class="icon-badge-sm"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4L2 12l6 8"/><path d="M16 4l6 8-6 8"/></svg></div><span>Custom Business Software</span></div>
-        <div class="svc-row"><div class="icon-badge-sm"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div><span>Industry-Specific Management Systems</span></div>
-      </div>
-      <div class="divider"></div>
-      <div>
-        <div class="build-col-title">Digital Solutions</div>
-        <div class="hairline" style="margin-top:16px;"></div>
-        <div class="svc-row"><div class="icon-badge-sm"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 4 5.7 4 9s-1.5 6.4-4 9c-2.5-2.6-4-5.7-4-9s1.5-6.4 4-9z"/></svg></div><span>Website Development</span></div>
-        <div class="svc-row"><div class="icon-badge-sm"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 01-5.4 5.4L4 17v3h3l5.3-5.3a4 4 0 015.4-5.4l-3 3-2-2 3-3z"/></svg></div><span>Website Maintenance &amp; Revamp</span></div>
-        <div class="svc-row"><div class="icon-badge-sm"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11v2a2 2 0 002 2h1l3 4V5L6 9H5a2 2 0 00-2 2z"/><path d="M14 8a4 4 0 010 8"/><path d="M17 5a8 8 0 010 14"/></svg></div><span>Digital Marketing</span></div>
-        <div class="svc-row"><div class="icon-badge-sm"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a7.5 7.5 0 01-11.8 6.1L3 19l1.4-5.8A7.5 7.5 0 1121 11.5z"/></svg></div><span>Social Media Solutions</span></div>
-        <div class="svc-row"><div class="icon-badge-sm"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.9L19 9l-5.2 1.9L12 16l-1.8-5.1L5 9l5.2-1.1L12 3z"/><path d="M19 15l.9 2.4L22 18l-2.1.7L19 21l-.9-2.3L16 18l2.1-.6L19 15z"/></svg></div><span>AI-Assisted Content Solutions</span></div>
-      </div>
+
+    <div class="eyebrow">
+      What we believe
     </div>
-    <div class="build-note">Systems run the business. Digital solutions help the business be found and stay visible.</div>
+
+    <h2 class="headline">
+      Good technology should feel
+      like it belongs in your business.
+    </h2>
+
+
+    <div class="belief-grid">
+
+      <div class="belief-card">
+
+        <div class="belief-number">01</div>
+
+        <h3>Understand first.</h3>
+
+        <p>
+          Before building anything, we look at the real problem,
+          the workflow and the people who will use the solution.
+        </p>
+
+      </div>
+
+
+      <div class="belief-card">
+
+        <div class="belief-number">02</div>
+
+        <h3>Keep it practical.</h3>
+
+        <p>
+          Technology is useful when it solves an actual problem
+          and makes everyday work easier.
+        </p>
+
+      </div>
+
+
+      <div class="belief-card">
+
+        <div class="belief-number">03</div>
+
+        <h3>Build around the business.</h3>
+
+        <p>
+          Your processes are unique. Your system should be designed
+          with that reality in mind.
+        </p>
+
+      </div>
+
+
+      <div class="belief-card">
+
+        <div class="belief-number">04</div>
+
+        <h3>Make it easy to work with us.</h3>
+
+        <p>
+          You don't need to speak in technical language.
+          Bring us the problem. We'll work through the solution together.
+        </p>
+
+      </div>
+
+    </div>
+
   </div>
+
 </section>
+
+
+<!-- BEFORE / AFTER -->
+<section class="about-shift-section">
+
+  <div class="wrap">
+
+    <div class="eyebrow">
+      The difference
+    </div>
+
+    <h2 class="headline">
+      From scattered work
+      to clearer systems.
+    </h2>
+
+    <p class="lede">
+      Our goal isn't to add more technology to your business.
+      It's to make the technology you use actually useful.
+    </p>
+
+
+    <div class="about-shift-card">
+
+      <div class="shift-side">
+
+        <div class="shift-label">
+          Before
+        </div>
+
+        <div class="shift-items">
+          <span>Paper records</span>
+          <span>Spreadsheets</span>
+          <span>Scattered information</span>
+          <span>Repeated manual work</span>
+        </div>
+
+      </div>
+
+
+      <div class="shift-arrow">
+
+        <svg
+          width="34"
+          height="34"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.7"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M5 12h14"/>
+          <path d="M13 6l6 6-6 6"/>
+        </svg>
+
+      </div>
+
+
+      <div class="shift-side shift-after">
+
+        <div class="shift-label">
+          With the right system
+        </div>
+
+        <div class="shift-unified">
+
+          <div class="shift-unified-icon">
+
+            <svg
+              width="27"
+              height="27"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+              <path d="M2 17l10 5 10-5"/>
+              <path d="M2 12l10 5 10-5"/>
+            </svg>
+
+          </div>
+
+          <div>
+            One clear system.
+            <br>
+            Less friction.
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- WHAT WE BUILD -->
+<section class="about-services-section">
+
+  <div class="wrap">
+
+    <div class="eyebrow">
+      What we build
+    </div>
+
+    <h2 class="headline">
+      Solutions for the work
+      businesses actually do.
+    </h2>
+
+    <p class="lede">
+      From everyday business systems to digital experiences,
+      we build practical solutions around real needs.
+    </p>
+
+
+    <div class="about-services-grid">
+
+      <div class="about-service-column">
+
+        <div class="about-service-heading">
+          Business Systems
+        </div>
+
+        <a href="systems.html" class="about-service">
+          <span>Rental Management</span>
+          <span>→</span>
+        </a>
+
+        <a href="systems.html" class="about-service">
+          <span>POS &amp; Sales</span>
+          <span>→</span>
+        </a>
+
+        <a href="systems.html" class="about-service">
+          <span>Inventory &amp; Stock</span>
+          <span>→</span>
+        </a>
+
+        <a href="systems.html" class="about-service">
+          <span>Invoicing &amp; Payments</span>
+          <span>→</span>
+        </a>
+
+        <a href="systems.html" class="about-service">
+          <span>Custom Business Software</span>
+          <span>→</span>
+        </a>
+
+      </div>
+
+
+      <div class="about-service-column">
+
+        <div class="about-service-heading">
+          Digital Solutions
+        </div>
+
+        <a href="contact.html" class="about-service">
+          <span>Website Development</span>
+          <span>→</span>
+        </a>
+
+        <a href="contact.html" class="about-service">
+          <span>Website Maintenance</span>
+          <span>→</span>
+        </a>
+
+        <a href="contact.html" class="about-service">
+          <span>Website Revamps</span>
+          <span>→</span>
+        </a>
+
+        <a href="contact.html" class="about-service">
+          <span>Digital Marketing</span>
+          <span>→</span>
+        </a>
+
+        <a href="contact.html" class="about-service">
+          <span>AI-Assisted Content</span>
+          <span>→</span>
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="about-services-note">
+      Need something different?
+      <strong>We'll build around your workflow.</strong>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- WHO WE HELP -->
+<section class="who-help-section">
+
+  <div class="wrap">
+
+    <div class="who-help-grid">
+
+      <div>
+
+        <div class="eyebrow">
+          Who we work with
+        </div>
+
+        <h2 class="headline">
+          Businesses that want
+          a better way to work.
+        </h2>
+
+        <p class="lede">
+          Whether you're running a growing shop, managing properties,
+          building a service business or developing something new,
+          we can help you turn the way you work into a clearer system.
+        </p>
+
+      </div>
+
+
+      <div class="who-help-list">
+
+        <div>Small &amp; growing businesses</div>
+        <div>Property owners &amp; managers</div>
+        <div>Retail businesses</div>
+        <div>Schools &amp; institutions</div>
+        <div>Service businesses</div>
+        <div>Businesses with custom workflows</div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CTA -->
+<section class="dark about-final-cta">
+
+  <div class="wrap about-final-inner">
+
+    <div class="eyebrow">
+      Let's work together
+    </div>
+
+    <h2>
+      You don't have to know
+      exactly what you need yet.
+    </h2>
+
+    <p>
+      Tell us what is taking too much time, creating too much paperwork
+      or simply not working the way you'd like.
+    </p>
+
+    <p class="about-final-emphasis">
+      We'll start there.
+    </p>
+
+    <a href="contact.html" class="hero-cta">
+      Talk to PureM
+      <span>→</span>
+    </a>
+
+  </div>
+
+</section>
+
 
 <footer class="site-footer">
+
   <div class="wrap footer-grid">
+
     <div class="footer-brand">
-      <div class="footer-logo"><img src="assets/images/logo-icon.png" alt="PureM Designs" class="brand-mark-img">PureM Designs</div>
-      <p class="footer-tagline">We build technology around the way your business works.</p>
+
+      <div class="footer-logo">
+        <img
+          src="assets/images/logo-icon.png"
+          alt="PureM Designs"
+          class="brand-mark-img"
+        >
+        PureM Designs
+      </div>
+
+      <p class="footer-tagline">
+        We build technology around the way your business works.
+      </p>
+
     </div>
+
+
     <div class="footer-col">
-      <div class="footer-heading">Explore</div>
+
+      <div class="footer-heading">
+        Explore
+      </div>
+
       <div class="footer-link-grid">
         <a href="who.html">Who We Are</a>
         <a href="systems.html">Our Systems</a>
         <a href="work.html">How We Work</a>
         <a href="contact.html">Contact</a>
       </div>
+
     </div>
+
+
     <div class="footer-col">
-      <div class="footer-heading">Get In Touch</div>
-      <a href="tel:0797231730">0797 231 730</a>
-      <a href="mailto:puremproperty@gmail.com">puremproperty@gmail.com</a>
-      <a href="contact.html">Contact Us</a>
+
+      <div class="footer-heading">
+        Get In Touch
+      </div>
+
+      <a href="tel:0797231730">
+        0797 231 730
+      </a>
+
+      <a href="mailto:puremproperty@gmail.com">
+        puremproperty@gmail.com
+      </a>
+
+      <a href="contact.html">
+        Contact Us
+      </a>
+
     </div>
+
   </div>
+
+
   <div class="wrap footer-bottom">
-    <div>© 2026 PureM Designs. All rights reserved.</div>
-    <div class="footer-bottom-tag">Simplify <span>/</span> Automate <span>/</span> Grow</div>
+
+    <div>
+      © 2026 PureM Designs. All rights reserved.
+    </div>
+
+    <div class="footer-bottom-tag">
+      Simplify <span>/</span> Automate <span>/</span> Grow
+    </div>
+
   </div>
+
 </footer>
+
 <script src="js/script.js"></script>
+
 </body>
 </html>
