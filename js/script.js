@@ -127,6 +127,8 @@ const autoRevealSelectors =
   '.showcase-card, .detail-card, .process-card, .experience-point, ' +
   '.why-work-card, .contact-option, .contact-prompt';
 
+const autoRevealEls = document.querySelectorAll(autoRevealSelectors);
+
 autoRevealEls.forEach((el, i) => {
   el.classList.add('auto-reveal');
   el.style.transitionDelay = (i % 6) * 0.08 + 's';
